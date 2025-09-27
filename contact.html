@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - Aamir Lone</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <span class="logo-initials">AL</span> Aamir Lone
+            </a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="resume.html" class="nav__link">Resume</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link active-link">Contact</a></li>
+                </ul>
+            </div>
+            <a href="contact.html" class="button">Get in touch</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <h1 class="section__title">Let's Connect</h1>
+            <p style="text-align: center; color: var(--text-color-light); margin-top: -1rem; margin-bottom: 2rem;">I'm always excited to discuss new opportunities, collaborate on interesting projects, or just have a conversation about technology and innovation.</p>
+
+            <div class="contact__container container">
+                <div>
+                     <h3 class="section__title" style="text-align: left; font-size: var(--h1-font-size);">Get In Touch</h3>
+                     <div class="contact__info-grid">
+                         <div class="contact__info-card">
+                             <i class='bx bx-envelope contact__card-icon'></i>
+                             <h3 class="contact__card-title">Email</h3>
+                             <a href="mailto:aamirlone004@gmail.com" class="contact__card-data">aamirlone004@gmail.com</a>
+                         </div>
+                         <div class="contact__info-card">
+                             <i class='bx bx-phone contact__card-icon'></i>
+                             <h3 class="contact__card-title">Phone</h3>
+                             <span class="contact__card-data">+91 9906811381</span>
+                         </div>
+                         <div class="contact__info-card">
+                             <i class='bx bx-map-pin contact__card-icon'></i>
+                             <h3 class="contact__card-title">Location</h3>
+                             <span class="contact__card-data">New Delhi, India</span>
+                         </div>
+                     </div>
+                     <h3 class="section__title" style="text-align: left; font-size: var(--h1-font-size);">Send me a message</h3>
+                     
+                     <!-- Success/Error Messages -->
+                     <div id="form-messages" class="form-messages" style="display: none;">
+                         <div id="success-message" class="success-message" style="display: none;">
+                             <i class='bx bx-check-circle'></i>
+                             <span>Thank you! Your message has been sent successfully. I'll get back to you soon!</span>
+                         </div>
+                         <div id="error-message" class="error-message" style="display: none;">
+                             <i class='bx bx-error-circle'></i>
+                             <span>Oops! There was an error sending your message. Please try again or contact me directly.</span>
+                         </div>
+                     </div>
+
+                     <form action="https://formspree.io/f/xkgqozpl" method="POST" class="contact__form" id="contact-form">
+                        <!-- Security: Formspree configuration -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <!-- Honeypot field for bot protection -->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+                        </div>
+                        
+                        <div class="form__input-div">
+                            <input type="text" name="name" placeholder="Full Name" class="form__input" required maxlength="100">
+                            <span class="form__input-error"></span>
+                        </div>
+                        <div class="form__input-div">
+                            <input type="email" name="email" placeholder="Email Address" class="form__input" required maxlength="100">
+                            <span class="form__input-error"></span>
+                        </div>
+                        <div class="form__input-div" style="grid-column: 1 / -1;">
+                             <input type="text" name="subject" placeholder="Subject" class="form__input" required maxlength="200">
+                             <span class="form__input-error"></span>
+                        </div>
+                        <div class="form__input-div" style="grid-column: 1 / -1;">
+                            <textarea name="message" placeholder="Tell me more about your project or inquiry..." class="form__input form__textarea" required maxlength="2000"></textarea>
+                            <span class="form__input-error"></span>
+                        </div>
+                        <button type="submit" class="button submit-button" style="grid-column: 1 / -1;">
+                            <span class="button-text">Send Message</span>
+                            <div class="button-loading" style="display: none;">
+                                <i class='bx bx-loader-alt bx-spin'></i>
+                                Sending...
+                            </div>
+                        </button>
+                     </form>
+                </div>
+                <div>
+                     <h3 class="section__title" style="text-align: left; font-size: var(--h1-font-size);">Connect on Social</h3>
+                     <div class="contact__social-container">
+                         <div class="contact__social-links">
+                             <a href="https://github.com/Aamir-Lone" target="_blank" class="social-link">
+                                <i class='bx bxl-github' style="font-size: 2rem;"></i>
+                                <div>
+                                    <strong>GitHub</strong>
+                                    <p style="font-size: var(--small-font-size); color: var(--text-color-light);">@Aamir-Lone</p>
+                                </div>
+                             </a>
+                             <a href="https://www.linkedin.com/in/aamir-lone/" target="_blank" class="social-link">
+                                <i class='bx bxl-linkedin-square' style="font-size: 2rem;"></i>
+                                <div>
+                                    <strong>LinkedIn</strong>
+                                    <p style="font-size: var(--small-font-size); color: var(--text-color-light);">aamir-lone</p>
+                                </div>
+                             </a>
+                         </div>
+                     </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+             <div class="footer__logo-box">
+                <a href="#" class="nav__logo">
+                    <span class="logo-initials">AL</span> Aamir Lone
+                </a>
+                <p class="footer__logo-text">Passionate developer building innovative solutions with modern technologies. Always learning, always creating.</p>
+            </div>
+            <div>
+                <h3 class="footer__title">Quick Links</h3>
+                <ul class="footer__links">
+                     <li><a href="index.html" class="footer__link">Home</a></li>
+                    <li><a href="projects.html" class="footer__link">Projects</a></li>
+                    <li><a href="resume.html" class="footer__link">Resume</a></li>
+                    <li><a href="contact.html" class="footer__link">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer__title">Connect With Me</h3>
+                <p>aamirlone004@gmail.com</p>
+                <div class="footer__social">
+                    <a href="https://github.com/Aamir-Lone" target="_blank" class="footer__social-link"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/aamir-lone/" target="_blank" class="footer__social-link"><i class='bx bxl-linkedin-square'></i></a>
+                </div>
+            </div>
+        </div>
+        <span class="footer__copy">&#169; 2025 Aamir Lone. All rights reserved.</span>
+    </footer>
+
+    <script>
+        // Form handling functionality
+        const form = document.getElementById('contact-form');
+        const formMessages = document.getElementById('form-messages');
+        const successMessage = document.getElementById('success-message');
+        const errorMessage = document.getElementById('error-message');
+        const submitButton = form.querySelector('.submit-button');
+        const buttonText = submitButton.querySelector('.button-text');
+        const buttonLoading = submitButton.querySelector('.button-loading');
+
+        // Form validation
+        function validateForm() {
+            const inputs = form.querySelectorAll('input[required], textarea[required]');
+            let isValid = true;
+
+            inputs.forEach(input => {
+                const errorSpan = input.nextElementSibling;
+                
+                // Clear previous error state
+                input.classList.remove('error');
+                if (errorSpan && errorSpan.classList.contains('form__input-error')) {
+                    errorSpan.textContent = '';
+                }
+
+                // Validate field
+                if (!input.value.trim()) {
+                    input.classList.add('error');
+                    if (errorSpan && errorSpan.classList.contains('form__input-error')) {
+                        errorSpan.textContent = `${input.placeholder} is required`;
+                    }
+                    isValid = false;
+                } else if (input.type === 'email' && !isValidEmail(input.value)) {
+                    input.classList.add('error');
+                    if (errorSpan && errorSpan.classList.contains('form__input-error')) {
+                        errorSpan.textContent = 'Please enter a valid email address';
+                    }
+                    isValid = false;
+                }
+            });
+
+            return isValid;
+        }
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function showMessage(type) {
+            formMessages.style.display = 'block';
+            
+            if (type === 'success') {
+                successMessage.style.display = 'flex';
+                errorMessage.style.display = 'none';
+            } else {
+                successMessage.style.display = 'none';
+                errorMessage.style.display = 'flex';
+            }
+
+            // Scroll to message
+            formMessages.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessages.style.display = 'none';
+            }, 5000);
+        }
+
+        function setButtonState(loading) {
+            if (loading) {
+                submitButton.disabled = true;
+                buttonText.style.display = 'none';
+                buttonLoading.style.display = 'flex';
+            } else {
+                submitButton.disabled = false;
+                buttonText.style.display = 'block';
+                buttonLoading.style.display = 'none';
+            }
+        }
+
+        // Security: Rate limiting
+        let lastSubmission = 0;
+        const RATE_LIMIT_MS = 30000; // 30 seconds between submissions
+
+        // Security: Simple content filtering
+        function containsSpam(text) {
+            const spamKeywords = ['viagra', 'casino', 'lottery', 'winner', 'congratulations', 'click here', 'free money'];
+            const lowerText = text.toLowerCase();
+            return spamKeywords.some(keyword => lowerText.includes(keyword));
+        }
+
+        // Handle form submission
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            // Security: Rate limiting check
+            const now = Date.now();
+            if (now - lastSubmission < RATE_LIMIT_MS) {
+                showMessage('error');
+                errorMessage.querySelector('span').textContent = 'Please wait 30 seconds between submissions.';
+                return;
+            }
+
+            // Validate form
+            if (!validateForm()) {
+                return;
+            }
+
+            // Security: Content filtering
+            const messageText = form.querySelector('[name="message"]').value;
+            const subjectText = form.querySelector('[name="subject"]').value;
+            
+            if (containsSpam(messageText) || containsSpam(subjectText)) {
+                showMessage('error');
+                errorMessage.querySelector('span').textContent = 'Your message contains prohibited content. Please revise and try again.';
+                return;
+            }
+
+            // Set loading state
+            setButtonState(true);
+            lastSubmission = now;
+
+            try {
+                const formData = new FormData(form);
+                
+                // Security: Add timestamp and referrer
+                formData.append('_timestamp', new Date().toISOString());
+                formData.append('_referrer', window.location.href);
+                
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    showMessage('success');
+                    form.reset(); // Clear form
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showMessage('error');
+            } finally {
+                setButtonState(false);
+            }
+        });
+
+        // Real-time validation on input
+        form.querySelectorAll('input, textarea').forEach(input => {
+            input.addEventListener('blur', function() {
+                const errorSpan = this.nextElementSibling;
+                
+                // Clear previous error state
+                this.classList.remove('error');
+                if (errorSpan && errorSpan.classList.contains('form__input-error')) {
+                    errorSpan.textContent = '';
+                }
+
+                // Validate individual field
+                if (this.hasAttribute('required') && !this.value.trim()) {
+                    this.classList.add('error');
+                    if (errorSpan && errorSpan.classList.contains('form__input-error')) {
+                        errorSpan.textContent = `${this.placeholder} is required`;
+                    }
+                } else if (this.type === 'email' && this.value && !isValidEmail(this.value)) {
+                    this.classList.add('error');
+                    if (errorSpan && errorSpan.classList.contains('form__input-error')) {
+                        errorSpan.textContent = 'Please enter a valid email address';
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
