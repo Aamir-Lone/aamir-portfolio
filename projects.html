@@ -1,347 +1,554 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.jpeg">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.jpeg" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Projects - Aamir Lone</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <nav class="nav container">
-            <a href="index.html" class="nav__logo">
-                <span class="logo-initials">AL</span> Aamir Lone
-            </a>
-            
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="projects.html" class="nav__link active-link">Projects</a></li>
-                    <li class="nav__item"><a href="resume.html" class="nav__link">Resume</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-                </ul>
-                <div class="nav__cta-container">
-                    <a href="contact.html" class="button nav__cta">Get in touch</a>
-                </div>
-            </div>
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <span class="logo-initials">AL</span> Aamir Lone
+        </a>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="projects.html" class="nav__link active-link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="resume.html" class="nav__link">Resume</a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <div class="nav__cta-container">
+            <a href="contact.html" class="button nav__cta">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
     </header>
 
     <main class="main">
-        <section class="section">
-            <h1 class="section__title">My Projects</h1>
-            
-            <div class="container grid" style="margin-bottom: 3rem;">
-                <h2 class="section__title" style="text-align: left; font-size: var(--h1-font-size);">Featured Projects</h2>
-                
-                <div class="projects__card projects__card--featured">
-                    <div class="project__image-container">
-                        <img src="assets/project-research.jpg" alt="AI Deep Research System">
-                    </div>
-                    <div>
-                        <div class="project__header">
-                            <h3 class="project__title">AI Agent-Based Deep Research System</h3>
-                            <span class="project__status">Live</span>
-                        </div>
-                        <div class="project__tags">
-                            <span class="project__tag">AI/ML</span>
-                        </div>
-                        <p class="project__description">
-                            A dual-agent system that automates deep web research. One agent crawls the web using the Tavily API, and another summarizes the findings. Built with an interactive Streamlit interface for seamless user queries.
-                        </p>
-                        <div class="project__tech">
-                             <span class="skills__item">Python</span>
-                             <span class="skills__item">Streamlit</span>
-                             <span class="skills__item">LangChain</span>
-                             <span class="skills__item">LLMs</span>
-                        </div>
-                         <div class="project__buttons" style="margin-top: 1.5rem;">
-                            <a href="#interactive-demos" class="demo-btn" data-tab="1">Live Demo</a>
-                            <a href="https://github.com/Aamir-Lone/deep-research-ai" target="_blank" class="button button--ghost">View Code</a>
-                        </div>
-                    </div>
-                </div>
+      <section class="section">
+        <h1 class="section__title">My Projects</h1>
 
-                <div class="projects__card projects__card--featured">
-                    <div class="project__image-container">
-                        <img src="assets/project-scheduler.jpg" alt="AI Doctor Appointment Scheduler">
-                    </div>
-                    <div>
-                        <div class="project__header">
-                            <h3 class="project__title">AI-Driven Doctor Appointment Scheduler</h3>
-                            <span class="project__status">Live</span>
-                        </div>
-                         <div class="project__tags">
-                            <span class="project__tag">AI/ML</span>
-                        </div>
-                        <p class="project__description">
-                            Streamlines healthcare scheduling using AI. This system automates the patient scheduling flow, reducing manual administrative tasks and improving efficiency. Future integration for email/SMS notifications is planned.
-                        </p>
-                         <div class="project__tech">
-                             <span class="skills__item">Python</span>
-                             <span class="skills__item">LangChain</span>
-                             <span class="skills__item">Streamlit</span>
-                        </div>
-                         <div class="project__buttons" style="margin-top: 1.5rem;">
-                            <a href="#interactive-demos" class="demo-btn" data-tab="2">Live Demo</a>
-                            <a href="https://github.com/Aamir-Lone/AI_Appointment_Scheduling_Agent" target="_blank" class="button button--ghost">View Code</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="container grid" style="margin-bottom: 3rem">
+          <h2
+            class="section__title"
+            style="text-align: left; font-size: var(--h1-font-size)"
+          >
+            Featured Projects
+          </h2>
 
-                <div class="projects__card projects__card--featured">
-                    <div class="project__image-container">
-                        <img src="assets/project-subtitle.jpg" alt="Video Subtitle Generator">
-                    </div>
-                    <div>
-                        <div class="project__header">
-                            <h3 class="project__title">AI-Powered Video Subtitle Generator</h3>
-                            <span class="project__status">Live</span>
-                        </div>
-                        <div class="project__tags">
-                            <span class="project__tag">AI/ML</span>
-                        </div>
-                        <p class="project__description">
-                            An intelligent video processing tool that automatically generates accurate subtitles using OpenAI's Whisper model. Upload any video file and get professionally formatted subtitles with hardcoded overlay options for enhanced accessibility.
-                        </p>
-                        <div class="project__tech">
-                             <span class="skills__item">Python</span>
-                             <span class="skills__item">OpenAI Whisper</span>
-                             <span class="skills__item">Streamlit</span>
-                             <span class="skills__item">MoviePy</span>
-                        </div>
-                         <div class="project__buttons" style="margin-top: 1.5rem;">
-                            <a href="#interactive-demos" class="demo-btn" data-tab="3">Live Demo</a>
-                            <a href="https://github.com/Aamir-Lone/video-subtitle-generator" target="_blank" class="button button--ghost">View Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="interactive-demos" class="container" style="margin-bottom: 3rem;">
-                 <h2 class="section__title" style="text-align: left; font-size: var(--h1-font-size);">Interactive Demos</h2>
-                 <div class="interactive-demos__container">
-                     <div class="interactive-demos__tabs">
-                         <div class="interactive-demos__tab active" data-tab="1">AI Research System</div>
-                         <div class="interactive-demos__tab" data-tab="2">Doctor Scheduler</div>
-                         <div class="interactive-demos__tab" data-tab="3">Subtitle Generator</div>
-                     </div>
-                     <div class="interactive-demos__content active" data-content="1">
-                         <iframe class="interactive-demos__iframe" src="https://deep-research-ai-jqqhbf7ggrt2x3tsse2yks.streamlit.app/?embed=true" title="AI Deep Research Demo"></iframe>
-                     </div>
-                     <div class="interactive-demos__content" data-content="2">
-                         <iframe class="interactive-demos__iframe" src="https://appointmentagent.streamlit.app/?embed=true" title="Doctor Scheduler Demo"></iframe>
-                     </div>
-                     <div class="interactive-demos__content" data-content="3">
-                         <iframe class="interactive-demos__iframe" src="https://subtitlegeneratorfromvideo.streamlit.app/?embed=true" title="Subtitle Generator Demo"></iframe>
-                     </div>
-                 </div>
-            </div>
-
-             <div class="container">
-                <h2 class="section__title" style="text-align: left; font-size: var(--h1-font-size);">All Projects</h2>
-                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-                    <div class="projects__card">
-                         <div class="project__header">
-                            <h3 class="project__title">AI Research System</h3>
-                            <span class="project__status">Live</span>
-                        </div>
-                        <div class="project__tags"><span class="project__tag">AI/ML</span></div>
-                        <p class="project__description">Autonomous research agents using LangChain.</p>
-                        <div class="project__tech"><span class="skills__item">Python</span><span class="skills__item">LangChain</span></div>
-                        <div class="project__buttons" style="margin-top: 1rem;"><a href="#interactive-demos" class="demo-btn" data-tab="1">Demo</a><a href="https://github.com/Aamir-Lone/deep-research-ai" target="_blank" class="button button--ghost">Code</a></div>
-                    </div>
-                     <div class="projects__card">
-                         <div class="project__header">
-                            <h3 class="project__title">AI Doctor Scheduler</h3>
-                            <span class="project__status">Live</span>
-                        </div>
-                        <div class="project__tags"><span class="project__tag">AI/ML</span></div>
-                        <p class="project__description">AI-powered patient scheduling automation.</p>
-                        <div class="project__tech"><span class="skills__item">Python</span><span class="skills__item">Streamlit</span></div>
-                        <div class="project__buttons" style="margin-top: 1rem;"><a href="#interactive-demos" class="demo-btn" data-tab="2">Demo</a><a href="https://github.com/Aamir-Lone/AI_Appointment_Scheduling_Agent" target="_blank" class="button button--ghost">Code</a></div>
-                    </div>
-                     <div class="projects__card">
-                         <div class="project__header">
-                            <h3 class="project__title">Video Subtitle Generator</h3>
-                            <span class="project__status">Live</span>
-                        </div>
-                        <div class="project__tags"><span class="project__tag">AI/ML</span></div>
-                        <p class="project__description">Generates transcripts & hardcoded subtitles.</p>
-                        <div class="project__tech"><span class="skills__item">OpenAI Whisper</span><span class="skills__item">MoviePy</span></div>
-                        <div class="project__buttons" style="margin-top: 1rem;"><a href="#interactive-demos" class="demo-btn" data-tab="3">Demo</a><a href="https://github.com/Aamir-Lone/video_subtitle_generator" target="_blank" class="button button--ghost">Code</a></div>
-                    </div>
-                     <div class="projects__card">
-                         <div class="project__header">
-                            <h3 class="project__title">Python-based Crypto Analysis</h3>
-                             <span class="project__status completed">Completed</span>
-                        </div>
-                        <div class="project__tags"><span class="project__tag">Backend</span></div>
-                        <p class="project__description">Fetches crypto data and generates Excel reports.</p>
-                        <div class="project__tech"><span class="skills__item">Python</span><span class="skills__item">Asyncio</span><span class="skills__item">API</span></div>
-                        <div class="project__buttons" style="margin-top: 1rem;"><a href="https://github.com/Aamir-Lone/crypto-analysis" target="_blank" class="button button--ghost">Code</a></div>
-                    </div>
-                    <div class="projects__card">
-                         <div class="project__header">
-                            <h3 class="project__title">Go-based Recruitment System</h3>
-                             <span class="project__status completed">Completed</span>
-                        </div>
-                        <div class="project__tags"><span class="project__tag">Backend</span></div>
-                        <p class="project__description">Backend for resume processing and user auth.</p>
-                        <div class="project__tech"><span class="skills__item">Go</span><span class="skills__item">MongoDB</span><span class="skills__item">REST API</span></div>
-                        <div class="project__buttons" style="margin-top: 1rem;"><a href="https://github.com/Aamir-Lone/recruitmentSystem" target="_blank" class="button button--ghost">Code</a></div>
-                    </div>
-                     <div class="projects__card">
-                         <div class="project__header">
-                            <h3 class="project__title">Academic Performance Predictor</h3>
-                             <span class="project__status completed">Completed</span>
-                        </div>
-                        <div class="project__tags"><span class="project__tag">ML</span></div>
-                        <p class="project__description">ML model predicting student dropout rates.</p>
-                        <div class="project__tech"><span class="skills__item">Python</span><span class="skills__item">Scikit-learn</span></div>
-                        <div class="project__buttons" style="margin-top: 1rem;"><a href="https://github.com/Aamir-Lone/MCA-Project" target="_blank" class="button button--ghost">Code</a></div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <footer class="footer">
-        <div class="footer__container container grid">
-             <div class="footer__logo-box">
-                <a href="#" class="nav__logo">
-                    <span class="logo-initials">AL</span> Aamir Lone
-                </a>
-                <p class="footer__logo-text">Passionate developer building innovative solutions with modern technologies. Always learning, always creating.</p>
+          <div class="projects__card projects__card--featured">
+            <div class="project__image-container">
+              <img
+                src="assets/project-research.jpg"
+                alt="AI Deep Research System"
+              />
             </div>
             <div>
-                <h3 class="footer__title">Quick Links</h3>
-                <ul class="footer__links">
-                     <li><a href="index.html" class="footer__link">Home</a></li>
-                    <li><a href="projects.html" class="footer__link">Projects</a></li>
-                    <li><a href="resume.html" class="footer__link">Resume</a></li>
-                    <li><a href="contact.html" class="footer__link">Contact</a></li>
-                </ul>
+              <div class="project__header">
+                <h3 class="project__title">
+                  AI Agent-Based Deep Research System
+                </h3>
+                <span class="project__status">Live</span>
+              </div>
+              <div class="project__tags">
+                <span class="project__tag">AI/ML</span>
+              </div>
+              <p class="project__description">
+                A dual-agent system that automates deep web research. One agent
+                crawls the web using the Tavily API, and another summarizes the
+                findings. Built with an interactive Streamlit interface for
+                seamless user queries.
+              </p>
+              <div class="project__tech">
+                <span class="skills__item">Python</span>
+                <span class="skills__item">Streamlit</span>
+                <span class="skills__item">LangChain</span>
+                <span class="skills__item">LLMs</span>
+              </div>
+              <div class="project__buttons" style="margin-top: 1.5rem">
+                <a href="#interactive-demos" class="demo-btn" data-tab="1"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/Aamir-Lone/deep-research-ai"
+                  target="_blank"
+                  class="button button--ghost"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__card projects__card--featured">
+            <div class="project__image-container">
+              <img
+                src="assets/project-scheduler.jpg"
+                alt="AI Doctor Appointment Scheduler"
+              />
             </div>
             <div>
-                <h3 class="footer__title">Connect With Me</h3>
-                <p>aamirlone004@gmail.com</p>
-                <div class="footer__social">
-                    <a href="https://github.com/Aamir-Lone" target="_blank" class="footer__social-link"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/aamir-lone/" target="_blank" class="footer__social-link"><i class='bx bxl-linkedin-square'></i></a>
-                </div>
+              <div class="project__header">
+                <h3 class="project__title">
+                  AI-Driven Doctor Appointment Scheduler
+                </h3>
+                <span class="project__status">Live</span>
+              </div>
+              <div class="project__tags">
+                <span class="project__tag">AI/ML</span>
+              </div>
+              <p class="project__description">
+                Streamlines healthcare scheduling using AI. This system
+                automates the patient scheduling flow, reducing manual
+                administrative tasks and improving efficiency. Future
+                integration for email/SMS notifications is planned.
+              </p>
+              <div class="project__tech">
+                <span class="skills__item">Python</span>
+                <span class="skills__item">LangChain</span>
+                <span class="skills__item">Streamlit</span>
+              </div>
+              <div class="project__buttons" style="margin-top: 1.5rem">
+                <a href="#interactive-demos" class="demo-btn" data-tab="2"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/Aamir-Lone/AI_Appointment_Scheduling_Agent"
+                  target="_blank"
+                  class="button button--ghost"
+                  >View Code</a
+                >
+              </div>
             </div>
+          </div>
+
+          <div class="projects__card projects__card--featured">
+            <div class="project__image-container">
+              <img
+                src="assets/project-subtitle.jpg"
+                alt="Video Subtitle Generator"
+              />
+            </div>
+            <div>
+              <div class="project__header">
+                <h3 class="project__title">
+                  AI-Powered Video Subtitle Generator
+                </h3>
+                <span class="project__status">Live</span>
+              </div>
+              <div class="project__tags">
+                <span class="project__tag">AI/ML</span>
+              </div>
+              <p class="project__description">
+                An intelligent video processing tool that automatically
+                generates accurate subtitles using OpenAI's Whisper model.
+                Upload any video file and get professionally formatted subtitles
+                with hardcoded overlay options for enhanced accessibility.
+              </p>
+              <div class="project__tech">
+                <span class="skills__item">Python</span>
+                <span class="skills__item">OpenAI Whisper</span>
+                <span class="skills__item">Streamlit</span>
+                <span class="skills__item">MoviePy</span>
+              </div>
+              <div class="project__buttons" style="margin-top: 1.5rem">
+                <a href="#interactive-demos" class="demo-btn" data-tab="3"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/Aamir-Lone/video-subtitle-generator"
+                  target="_blank"
+                  class="button button--ghost"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <span class="footer__copy">&#169; 2025 Aamir Lone. All rights reserved.</span>
+
+        <div
+          id="interactive-demos"
+          class="container"
+          style="margin-bottom: 3rem"
+        >
+          <h2
+            class="section__title"
+            style="text-align: left; font-size: var(--h1-font-size)"
+          >
+            Interactive Demos
+          </h2>
+          <div class="interactive-demos__container">
+            <div class="interactive-demos__tabs">
+              <div class="interactive-demos__tab active" data-tab="1">
+                AI Research System
+              </div>
+              <div class="interactive-demos__tab" data-tab="2">
+                Doctor Scheduler
+              </div>
+              <div class="interactive-demos__tab" data-tab="3">
+                Subtitle Generator
+              </div>
+            </div>
+            <div class="interactive-demos__content active" data-content="1">
+              <iframe
+                class="interactive-demos__iframe"
+                src="https://deep-research-ai-jqqhbf7ggrt2x3tsse2yks.streamlit.app/?embed=true"
+                title="AI Deep Research Demo"
+              ></iframe>
+            </div>
+            <div class="interactive-demos__content" data-content="2">
+              <iframe
+                class="interactive-demos__iframe"
+                src="https://appointmentagent.streamlit.app/?embed=true"
+                title="Doctor Scheduler Demo"
+              ></iframe>
+            </div>
+            <div class="interactive-demos__content" data-content="3">
+              <iframe
+                class="interactive-demos__iframe"
+                src="https://subtitlegeneratorfromvideo.streamlit.app/?embed=true"
+                title="Subtitle Generator Demo"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <h2
+            class="section__title"
+            style="text-align: left; font-size: var(--h1-font-size)"
+          >
+            All Projects
+          </h2>
+          <div
+            class="grid"
+            style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))"
+          >
+            <div class="projects__card">
+              <div class="project__header">
+                <h3 class="project__title">AI Research System</h3>
+                <span class="project__status">Live</span>
+              </div>
+              <div class="project__tags">
+                <span class="project__tag">AI/ML</span>
+              </div>
+              <p class="project__description">
+                Autonomous research agents using LangChain.
+              </p>
+              <div class="project__tech">
+                <span class="skills__item">Python</span
+                ><span class="skills__item">LangChain</span>
+              </div>
+              <div class="project__buttons" style="margin-top: 1rem">
+                <a href="#interactive-demos" class="demo-btn" data-tab="1"
+                  >Demo</a
+                ><a
+                  href="https://github.com/Aamir-Lone/deep-research-ai"
+                  target="_blank"
+                  class="button button--ghost"
+                  >Code</a
+                >
+              </div>
+            </div>
+            <div class="projects__card">
+              <div class="project__header">
+                <h3 class="project__title">AI Doctor Scheduler</h3>
+                <span class="project__status">Live</span>
+              </div>
+              <div class="project__tags">
+                <span class="project__tag">AI/ML</span>
+              </div>
+              <p class="project__description">
+                AI-powered patient scheduling automation.
+              </p>
+              <div class="project__tech">
+                <span class="skills__item">Python</span
+                ><span class="skills__item">Streamlit</span>
+              </div>
+              <div class="project__buttons" style="margin-top: 1rem">
+                <a href="#interactive-demos" class="demo-btn" data-tab="2"
+                  >Demo</a
+                ><a
+                  href="https://github.com/Aamir-Lone/AI_Appointment_Scheduling_Agent"
+                  target="_blank"
+                  class="button button--ghost"
+                  >Code</a
+                >
+              </div>
+            </div>
+            <div class="projects__card">
+              <div class="project__header">
+                <h3 class="project__title">Video Subtitle Generator</h3>
+                <span class="project__status">Live</span>
+              </div>
+              <div class="project__tags">
+                <span class="project__tag">AI/ML</span>
+              </div>
+              <p class="project__description">
+                Generates transcripts & hardcoded subtitles.
+              </p>
+              <div class="project__tech">
+                <span class="skills__item">OpenAI Whisper</span
+                ><span class="skills__item">MoviePy</span>
+              </div>
+              <div class="project__buttons" style="margin-top: 1rem">
+                <a href="#interactive-demos" class="demo-btn" data-tab="3"
+                  >Demo</a
+                ><a
+                  href="https://github.com/Aamir-Lone/video_subtitle_generator"
+                  target="_blank"
+                  class="button button--ghost"
+                  >Code</a
+                >
+              </div>
+            </div>
+            <div class="projects__card">
+              <div class="project__header">
+                <h3 class="project__title">Python-based Crypto Analysis</h3>
+                <span class="project__status completed">Completed</span>
+              </div>
+              <div class="project__tags">
+                <span class="project__tag">Backend</span>
+              </div>
+              <p class="project__description">
+                Fetches crypto data and generates Excel reports.
+              </p>
+              <div class="project__tech">
+                <span class="skills__item">Python</span
+                ><span class="skills__item">Asyncio</span
+                ><span class="skills__item">API</span>
+              </div>
+              <div class="project__buttons" style="margin-top: 1rem">
+                <a
+                  href="https://github.com/Aamir-Lone/crypto-analysis"
+                  target="_blank"
+                  class="button button--ghost"
+                  >Code</a
+                >
+              </div>
+            </div>
+            <div class="projects__card">
+              <div class="project__header">
+                <h3 class="project__title">Go-based Recruitment System</h3>
+                <span class="project__status completed">Completed</span>
+              </div>
+              <div class="project__tags">
+                <span class="project__tag">Backend</span>
+              </div>
+              <p class="project__description">
+                Backend for resume processing and user auth.
+              </p>
+              <div class="project__tech">
+                <span class="skills__item">Go</span
+                ><span class="skills__item">MongoDB</span
+                ><span class="skills__item">REST API</span>
+              </div>
+              <div class="project__buttons" style="margin-top: 1rem">
+                <a
+                  href="https://github.com/Aamir-Lone/recruitmentSystem"
+                  target="_blank"
+                  class="button button--ghost"
+                  >Code</a
+                >
+              </div>
+            </div>
+            <div class="projects__card">
+              <div class="project__header">
+                <h3 class="project__title">Academic Performance Predictor</h3>
+                <span class="project__status completed">Completed</span>
+              </div>
+              <div class="project__tags">
+                <span class="project__tag">ML</span>
+              </div>
+              <p class="project__description">
+                ML model predicting student dropout rates.
+              </p>
+              <div class="project__tech">
+                <span class="skills__item">Python</span
+                ><span class="skills__item">Scikit-learn</span>
+              </div>
+              <div class="project__buttons" style="margin-top: 1rem">
+                <a
+                  href="https://github.com/Aamir-Lone/MCA-Project"
+                  target="_blank"
+                  class="button button--ghost"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div class="footer__logo-box">
+          <a href="#" class="nav__logo">
+            <span class="logo-initials">AL</span> Aamir Lone
+          </a>
+          <p class="footer__logo-text">
+            Passionate developer building innovative solutions with modern
+            technologies. Always learning, always creating.
+          </p>
+        </div>
+        <div>
+          <h3 class="footer__title">Quick Links</h3>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="projects.html" class="footer__link">Projects</a></li>
+            <li><a href="resume.html" class="footer__link">Resume</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Connect With Me</h3>
+          <p>aamirlone004@gmail.com</p>
+          <div class="footer__social">
+            <a
+              href="https://github.com/Aamir-Lone"
+              target="_blank"
+              class="footer__social-link"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/aamir-lone/"
+              target="_blank"
+              class="footer__social-link"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <span class="footer__copy"
+        >&#169; 2025 Aamir Lone. All rights reserved.</span
+      >
     </footer>
 
     <script>
-        const tabs = document.querySelectorAll('.interactive-demos__tab');
-        const contents = document.querySelectorAll('.interactive-demos__content');
-        const demoButtons = document.querySelectorAll('.demo-btn');
+      const tabs = document.querySelectorAll(".interactive-demos__tab");
+      const contents = document.querySelectorAll(".interactive-demos__content");
+      const demoButtons = document.querySelectorAll(".demo-btn");
 
-        function switchToTab(tabNumber) {
-            // Remove active class from all tabs and contents
-            tabs.forEach(item => {
-                item.classList.remove('active');
-                item.style.removeProperty('background');
-                item.style.removeProperty('color');
-                item.style.removeProperty('transform');
-                item.style.removeProperty('box-shadow');
-            });
-            contents.forEach(content => content.classList.remove('active'));
-            
-            // Add active class to selected tab and content
-            const selectedTab = document.querySelector(`.interactive-demos__tab[data-tab="${tabNumber}"]`);
-            const selectedContent = document.querySelector(`[data-content="${tabNumber}"]`);
-            
-            if (selectedTab && selectedContent) {
-                selectedTab.classList.add('active');
-                selectedContent.classList.add('active');
-                
-                // Force apply active styles
-                setTimeout(() => {
-                    selectedTab.style.background = 'linear-gradient(135deg, #F97316, #FB923C)';
-                    selectedTab.style.color = '#FFF';
-                    selectedTab.style.transform = 'translateY(-3px)';
-                    selectedTab.style.boxShadow = '0 4px 15px rgba(249, 115, 22, 0.3)';
-                    selectedTab.style.border = '1px solid #F97316';
-                }, 10);
-            }
+      function switchToTab(tabNumber) {
+        // Remove active class from all tabs and contents
+        tabs.forEach((item) => {
+          item.classList.remove("active");
+          item.style.removeProperty("background");
+          item.style.removeProperty("color");
+          item.style.removeProperty("transform");
+          item.style.removeProperty("box-shadow");
+        });
+        contents.forEach((content) => content.classList.remove("active"));
+
+        // Add active class to selected tab and content
+        const selectedTab = document.querySelector(
+          `.interactive-demos__tab[data-tab="${tabNumber}"]`,
+        );
+        const selectedContent = document.querySelector(
+          `[data-content="${tabNumber}"]`,
+        );
+
+        if (selectedTab && selectedContent) {
+          selectedTab.classList.add("active");
+          selectedContent.classList.add("active");
+
+          // Force apply active styles
+          setTimeout(() => {
+            selectedTab.style.background =
+              "linear-gradient(135deg, #F97316, #FB923C)";
+            selectedTab.style.color = "#FFF";
+            selectedTab.style.transform = "translateY(-3px)";
+            selectedTab.style.boxShadow = "0 4px 15px rgba(249, 115, 22, 0.3)";
+            selectedTab.style.border = "1px solid #F97316";
+          }, 10);
         }
+      }
 
-        // Handle tab clicks
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                switchToTab(tab.dataset.tab);
-            });
+      // Handle tab clicks
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          switchToTab(tab.dataset.tab);
         });
+      });
 
-        // Handle demo button clicks
-        demoButtons.forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                const tabNumber = button.dataset.tab;
-                switchToTab(tabNumber);
-                
-                // Smooth scroll to interactive demos section
-                document.getElementById('interactive-demos').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+      // Handle demo button clicks
+      demoButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          e.preventDefault();
+          const tabNumber = button.dataset.tab;
+          switchToTab(tabNumber);
+
+          // Smooth scroll to interactive demos section
+          document.getElementById("interactive-demos").scrollIntoView({
+            behavior: "smooth",
+          });
         });
+      });
 
-        // Mobile Navigation Menu Toggle
-        const navMenu = document.getElementById('nav-menu'),
-              navToggle = document.getElementById('nav-toggle'),
-              navLinks = document.querySelectorAll('.nav__link');
+      // Mobile Navigation Menu Toggle
+      const navMenu = document.getElementById("nav-menu"),
+        navToggle = document.getElementById("nav-toggle"),
+        navLinks = document.querySelectorAll(".nav__link");
 
-        // Show/Hide menu
-        if (navToggle) {
-            navToggle.addEventListener('click', () => {
-                navMenu.classList.toggle('show-menu');
-                document.body.classList.toggle('menu-open');
-                
-                // Change hamburger to X icon
-                const icon = navToggle.querySelector('i');
-                if (navMenu.classList.contains('show-menu')) {
-                    icon.classList.remove('bx-menu');
-                    icon.classList.add('bx-x');
-                } else {
-                    icon.classList.remove('bx-x');
-                    icon.classList.add('bx-menu');
-                }
-            });
+      // Show/Hide menu
+      if (navToggle) {
+        navToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("show-menu");
+          document.body.classList.toggle("menu-open");
+
+          // Change hamburger to X icon
+          const icon = navToggle.querySelector("i");
+          if (navMenu.classList.contains("show-menu")) {
+            icon.classList.remove("bx-menu");
+            icon.classList.add("bx-x");
+          } else {
+            icon.classList.remove("bx-x");
+            icon.classList.add("bx-menu");
+          }
+        });
+      }
+
+      // Close menu when clicking on a navigation link
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("show-menu");
+          document.body.classList.remove("menu-open");
+          const icon = navToggle.querySelector("i");
+          icon.classList.remove("bx-x");
+          icon.classList.add("bx-menu");
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+          navMenu.classList.remove("show-menu");
+          document.body.classList.remove("menu-open");
+          const icon = navToggle.querySelector("i");
+          icon.classList.remove("bx-x");
+          icon.classList.add("bx-menu");
         }
-
-        // Close menu when clicking on a navigation link
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('show-menu');
-                document.body.classList.remove('menu-open');
-                const icon = navToggle.querySelector('i');
-                icon.classList.remove('bx-x');
-                icon.classList.add('bx-menu');
-            });
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
-                navMenu.classList.remove('show-menu');
-                document.body.classList.remove('menu-open');
-                const icon = navToggle.querySelector('i');
-                icon.classList.remove('bx-x');
-                icon.classList.add('bx-menu');
-            }
-        });
+      });
     </script>
-</body>
+  </body>
 </html>
